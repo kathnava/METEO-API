@@ -49,7 +49,7 @@
     let month = d.toLocaleDateString();
     let time = d.toLocaleTimeString()
 
-    function heure(id) {
+    /*function heure(id) {
     h = date.getHours();
     if(h<10)
     {
@@ -64,7 +64,7 @@
     document.getElementById(id).innerHTML = resultat;
     setTimeout(`heure("id")');
     return true;
-  }
+  }*/
 
     document.querySelector('#ville').textContent=name;
     document.querySelector('#temperature').textContent = Math.round(temperature);
