@@ -49,7 +49,6 @@
     let month = d.toLocaleDateString();
     let time = d.toLocaleTimeString()
 
-    
 
     document.querySelector('#ville').textContent=name;
     document.querySelector('#temperature').textContent = Math.round(temperature);
@@ -60,12 +59,10 @@
     document.querySelector("#month").innerHTML = month;
     document.querySelector("#time").innerHTML = time;
 
-
     document.querySelector('i.wi').className = weatherIcons[conditions];
     document.body.className=conditions.toLowerCase();
   }
   
-
    const ville = document.querySelector('#ville');
       ville.addEventListener('click', () => {
       ville.contentEditable=true;
