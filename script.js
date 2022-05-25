@@ -4,8 +4,9 @@
     "Clouds" : "wi wi-day-cloudy",
     "Clear" : "wi wi-day-sunny",
     "Snow" : "wi wi-day-snow",
-    "mist" : "wi wi-day-fog",
+    "Mist" : "wi wi-day-fog",
     "Drizzel": "wi wi-day-sleet",
+    "Dust" : "wi wi-day-sunny",
   }
 
   function capitalize(str) {
@@ -47,7 +48,7 @@
     const description = data.weather[0].description;
     const d = new Date();
     let month = d.toLocaleDateString();
-    let time = d.toLocaleTimeString()
+    let time = d.toLocaleTimeString();
 
 
     document.querySelector('#ville').textContent=name;
